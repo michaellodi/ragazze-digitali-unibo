@@ -1,4 +1,7 @@
 {
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+
     "chat.disableAIFeatures": true,
 
     "python.analysis.typeCheckingMode": "off",
