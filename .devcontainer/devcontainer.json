@@ -16,10 +16,13 @@
         }
     },
 
+    "postCreateCommand": "python -m pip install --user -r requirements.txt",
+
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-python.python",
+                "ms-python.vscode-pylance",
                 "ms-vsliveshare.vsliveshare",
                 "GitHub.copilot",
                 "GitHub.copilot-chat"
