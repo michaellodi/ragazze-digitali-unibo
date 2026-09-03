@@ -1,7 +1,8 @@
 import turtle
+import random
 
-turtle.speed(0)
-turtle.pensize(3)
+turtle.speed(1)
+turtle.pensize(5)
 
 # I colori vengono usati a turno, uno diverso per ogni segmento
 colori = ["red", "orange", "yellow", "lime", "cyan", "blue", "violet"]
@@ -9,10 +10,9 @@ colori = ["red", "orange", "yellow", "lime", "cyan", "blue", "violet"]
 lunghezza = 5
 
 for segmento in range(80):
-    turtle.pencolor(colori[segmento % len(colori)])
+    turtle.pencolor(random.choice(colori))
     turtle.forward(lunghezza)
     turtle.left(90)
-    lunghezza += 4
+    lunghezza = lunghezza + 7
 
-turtle.hideturtle()
 turtle.done()
